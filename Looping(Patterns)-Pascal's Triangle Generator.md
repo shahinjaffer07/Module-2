@@ -1,4 +1,7 @@
 # 🔺 Looping(Patterns)-Pascal's Triangle Generator in Python
+Reg:212223040190
+
+Name: SHAHIN J
 
 This project demonstrates a simple Python program to generate **Pascal’s Triangle**, where the number of rows is provided by the user.
 
@@ -27,9 +30,24 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 ---
 
 ## 🧪 Program
-Add Code Here
+```
+rows = int(input())
+coef = 1
+
+for i in range(1, rows+1):
+    for space in range(1, rows-i+1):
+        print(" ",end="")
+    for j in range(0, i):
+        if j==0 or i==0:
+            coef = 1
+        else:
+            coef = coef * (i - j)//j
+        print(coef, end = " ")
+    print()
+```
 
 ## Sample Output
+![image](https://github.com/user-attachments/assets/fee10df7-81b9-42c5-a0df-6fda524265e9)
 
 ## Result
-
+Thus, the program has been successfully executed.
